@@ -1,0 +1,34 @@
+{
+   "keyframe": [
+       {
+		   "key":1,
+           "image": "1.jpg",
+		   "sentence": "hello"
+       },
+       {
+		   "key":2,
+           "image": "2.jpg",
+		   "sentence": "world"
+       },
+       {
+		   "key":3,
+           "image": "3.jpg",
+		   "sentence": "python"
+       },	   
+       {
+		   "key":4,
+           "image": "4.jpg",
+		   "sentence": "flask"
+       },	   
+       {
+		   "key":5,
+           "image": "5.jpg",
+		   "sentence": "css"
+       },	   
+       {
+		   "key":6,
+           "image": "6.jpg",
+		   "sentence": "html"
+       }	   
+   ]
+}

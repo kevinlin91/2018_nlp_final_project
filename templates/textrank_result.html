@@ -1,0 +1,50 @@
+<html>
+<head>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<link href="./static/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+<link href="./static/sticky-footer.css" rel="stylesheet">
+	<style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+<script>
+$(function() {
+$.getJSON('static/json/textrank.json', function(data) {
+       $.each(data.TextRank, function(i, f) {
+		  var row = "<p style='color:white;'>" + f.sentence + "</p>"
+		  $(row).appendTo("#key");
+     });
+
+   });
+
+});
+</script>
+</head>
+<body class="d-flex flex-column h-100" style='background: #555 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAB9JREFUeNpi/P//PwM6YGLAAuCCmpqacC2MRGsHCDAA+fIHfeQbO8kAAAAASUVORK5CYII=);'>
+<main role="main" class="flex-shrink-0">
+  <div class="container">
+    <h1 class="mt-5" style="color:#96afde;">TextRank Result</h1><br>
+	<div id = key>
+	</div>
+  </div>
+</main>
+
+<div id = key>
+</div>
+
+<footer class="footer mt-auto py-3">
+  <div class="container">
+    <span class="text-muted"><a href='/description_result#method'>Chose Another Method</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<a href='/'>Upload Another Video</a></</span>
+  </div>
+</footer>
+
+</body>
+</html>
